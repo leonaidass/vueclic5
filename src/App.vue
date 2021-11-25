@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <div class="container">
+      <Navbar titulo="App tareas"/>
+      <Card nombre="App tareas"/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Navbar from '@/components/Navbar.vue'
+import Card from '@/components/Card.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    
+    Navbar,
+    Card
   }
 }
 </script>
